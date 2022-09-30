@@ -1,0 +1,18 @@
+{% extends 'base.html' %}{% block content %}
+{% if orange == "Community" %}
+<h1>{{Community.name}}</h1>
+<h2>{{Community.description}}</h2>
+<h2>{{Community.people}}</h2>
+{% elif orange == "Documentation"%}
+<h1>{{Documentation.name}}</h1>
+<h2>{{Documentation.description}}</h2>
+<h2>{{Documentation.people}}</h2>
+{% elif orange == "Procurement"%}
+<h1>{{Procurement.name}}</h1>
+<h2>{{Procurement.description}}</h2>
+<h2>{{Procurement.people}}</h2>
+{% elif orange == "Management"%}
+<h1>{{Management.name}}</h1>
+<h2>{{Management.description}}</h2>
+<h2>{{Management.people}}</h2>
+{% endif %} {% endblock content %}
